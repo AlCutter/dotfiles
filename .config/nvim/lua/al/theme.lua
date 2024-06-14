@@ -21,7 +21,7 @@ return {
 		"catppuccin/nvim",
 		name = "catppuccin",
 		opts = {
-			no_italic = true, -- Force no italic
+			-- no_italic = true, -- Force no italic
 			color_overrides = {
 				mocha = {
 					base = "#000000",

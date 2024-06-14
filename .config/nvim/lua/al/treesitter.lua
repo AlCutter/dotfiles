@@ -44,7 +44,7 @@ return {
 				},
 			},
 			refactor = {
-				highlight_current_scope = { enable = true },
+				highlight_current_scope = { enable = false },
 				smart_rename = {
 					enable = true,
 					-- Assign keymaps to false to disable them, e.g. `smart_rename = false`.

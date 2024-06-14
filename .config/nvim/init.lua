@@ -249,6 +249,10 @@ require("lazy").setup({
 		end,
 	},
 	{
+		"petertriho/nvim-scrollbar",
+		opts = {},
+	},
+	{
 		import = "al",
 	},
 

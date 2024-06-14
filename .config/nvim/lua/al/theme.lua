@@ -21,6 +21,7 @@ return {
 		"catppuccin/nvim",
 		name = "catppuccin",
 		opts = {
+			no_italic = true, -- Force no italic
 			color_overrides = {
 				mocha = {
 					base = "#000000",
@@ -38,7 +39,7 @@ return {
 		priority = 1000,
 		init = function()
 			vim.cmd.colorscheme("catppuccin-mocha")
-			vim.cmd.hi("Comment gui=none")
+			-- vim.cmd.hi("Comment gui=none")
 		end,
 	},
 }

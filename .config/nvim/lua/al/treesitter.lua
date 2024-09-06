@@ -1,6 +1,6 @@
 return {
 	{
-		"nvim-treesitter/nvim-treesitter-refactor",
+		"nvim-treesitter/nvim-treesitter",
 	},
 	{ -- Highlight, edit, and navigate code
 		"nvim-treesitter/nvim-treesitter",

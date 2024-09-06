@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:${HOME}/go/bin:/usr/local/bin:/usr/local/go/bin:$PATH
+export PATH=$HOME/bin:${HOME}/go/bin:/usr/local/bin:/usr/local/go/bin:/usr/local/nvim/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -102,6 +102,6 @@ export EDITOR=nvim
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
-export TAMAGO=${HOME}/usbarmory/tamago-go/bin/go
+export TAMAGO=${HOME}/work/usbarmory/tamago-go/bin/go
 export PATH=${PATH}:${HOME}/go/bin
-alias config='/usr/bin/git --git-dir=/home/al/.cfg/ --work-tree=/home/al'
+alias config='git --git-dir=/home/al/.cfg/ --work-tree=/home/al'

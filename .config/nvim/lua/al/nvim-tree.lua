@@ -24,7 +24,7 @@ return {
 				require("nvim-tree.api").tree.toggle({ focus = false, find_file = true })
 			end
 
-			vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = open_nvim_tree })
+			--			vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = open_nvim_tree })
 
 			-- Make :bd and :q behave as usual when tree is visible
 			vim.api.nvim_create_autocmd({ "BufEnter", "QuitPre" }, {

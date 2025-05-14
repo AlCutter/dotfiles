@@ -70,7 +70,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-prompt colorize fzf ssh-agent vscode starship)
+plugins=(git colorize fzf ssh-agent starship)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -105,3 +105,8 @@ export EDITOR=nvim
 export TAMAGO=${HOME}/work/usbarmory/tamago-go/bin/go
 export PATH=${PATH}:${HOME}/go/bin
 alias config='git --git-dir=/home/al/.cfg/ --work-tree=/home/al'
+alias nvimdiff='nvim -d'
+
+if [ -f ~/.zshrc.local_only ]; then
+		source ~/.zshrc.local_only
+fi

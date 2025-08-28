@@ -361,45 +361,47 @@ require("lazy").setup({
       },
       ft = { "markdown", "Avante" },
   },
-  {
-    "yetone/avante.nvim",
-        config = function()
-      -- deps:
-      require('cmp').setup ({
-        -- use recommended settings from above
-      })
-      require('render-markdown').setup ({
-        -- use recommended settings from above
-      })
-      require('avante').setup ({
-          -- add any opts here
-          -- for example
-          provider = "gemini",
-          mode = "agentic",
-          auto_suggestions_provider = "gemini",
-          gemini = {
-            -- @see https://ai.google.dev/gemini-api/docs/models/geminiA
-            model = "gemini-2.0-flash",
-            -- model = "gemini-1.5-pro-exp-0827",
-            -- model = "gemini-1.5-flash",
-            temperature = 0,
-            max_tokens = 4096,
-          },
-          build = "make",
-          dual_boost = {
-            enabled = false,
-          },
-          behaviour = {
-            auto_suggestions = false, -- Experimental stage
-            auto_set_highlight_group = true,
-            auto_set_keymaps = true,
-            auto_apply_diff_after_generation = false,
-            support_paste_from_clipboard = false,
-          },
-    })
-    end
-  },
-
+  --{
+  --  "yetone/avante.nvim",
+  --        config = function()
+  --      -- deps:
+  --      require('cmp').setup ({
+  --        -- use recommended settings from above
+  --      })
+  --      require('render-markdown').setup ({
+  --        -- use recommended settings from above
+  --      })
+  --      require('avante').setup ({
+  --          -- add any opts here
+  --          -- for example
+  --          provider = "gemini",
+  --          mode = "agentic",
+  --          auto_suggestions_provider = "gemini",
+  --          providers = {
+  --            gemini = {
+  --              -- @see https://ai.google.dev/gemini-api/docs/models/geminiA
+  --              model = "gemini-2.5-pro-preview-05-06",
+  --              -- model = "gemini-2.0-pro",
+  --              -- model = "gemini-1.5-pro-exp-0827",
+  --              -- model = "gemini-1.5-flash",
+  --              temperature = 0,
+  --              max_tokens = 4096,
+  --            },
+  --          },
+  --          build = "make",
+  --          dual_boost = {
+  --            enabled = false,
+  --          },
+  --          behaviour = {
+  --            auto_suggestions = false, -- Experimental stage
+  --            auto_set_highlight_group = true,
+  --            auto_set_keymaps = true,
+  --            auto_apply_diff_after_generation = false,
+  --            support_paste_from_clipboard = false,
+  --          },
+  --    })
+  --    end
+  --  },
 	-- The following two comments only work if you have downloaded the kickstart repo, not just copy pasted the
 	-- init.lua. If you want these files, they are in the repository, so you can just download them and
 	-- place them in the correct locations.

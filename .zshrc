@@ -110,3 +110,6 @@ alias nvimdiff='nvim -d'
 if [ -f ~/.zshrc.local_only ]; then
 		source ~/.zshrc.local_only
 fi
+
+alias gemini="npx @google/gemini-cli"
+

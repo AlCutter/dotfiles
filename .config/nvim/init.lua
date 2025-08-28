@@ -234,7 +234,8 @@ require("lazy").setup({
 	"tpope/vim-unimpaired",
 	"tpope/vim-surround",
 	"tpope/vim-fugitive",
-  "will133/vim-dirdiff",
+  "sindrets/diffview.nvim",
+  --"will133/vim-dirdiff",
 	{
 		"rmagatti/auto-session",
 		opts = {

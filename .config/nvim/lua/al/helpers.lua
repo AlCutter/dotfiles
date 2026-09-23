@@ -9,6 +9,7 @@ return {
 				{ "<leader>d", group = "[D]ocument" },
 				{ "<leader>g", group = "[G]it" },
 				{ "<leader>h", group = "[H]arpoon" },
+				{ "<leader>l", group = "[L]ean" },
 				{ "<leader>r", group = "[R]ename" },
 				{ "<leader>s", group = "[S]earch" },
 				{ "<leader>t", group = "[T]oggle" },

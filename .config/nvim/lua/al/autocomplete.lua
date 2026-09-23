@@ -37,13 +37,6 @@ return {
 			"hrsh7th/cmp-path",
 			"windwp/nvim-autopairs",
 		},
-		-- {
-		-- 	"windwp/nvim-autopairs",
-		-- 	event = "InsertEnter",
-		-- 	config = true,
-		-- 	-- use opts = {} for passing setup options
-		-- 	-- this is equalent to setup({}) function
-		-- },
 		config = function()
 			-- vim.o.completeopt = "menuone,noselect,preview"
 			-- See `:help cmp`

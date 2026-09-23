@@ -1,12 +1,11 @@
 return {
 	-- Highlight todo, notes, etc in comments
 	{
-		--"ynhhoJ/todo-comments.nvim",
 		"folke/todo-comments.nvim",
 		event = "VimEnter",
 		dependencies = { "nvim-lua/plenary.nvim" },
 		opts = { signs = false },
 	},
-	-- "gc" to comment visual regions/lines
-	{ "numToStr/Comment.nvim", opts = {} },
+	-- Note: 'numToStr/Comment.nvim' removed as Neovim 0.10+ includes native
+	-- commenting via `gc` and `gcc` with treesitter support out of the box.
 }

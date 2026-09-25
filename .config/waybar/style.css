@@ -11,7 +11,7 @@
 /* Styles */
 
 /* Colors (gruvbox) */
-@define-color black	#282828;
+@define-color black	#1e1e2e;
 @define-color red	#cc241d;
 @define-color green	#98971a;
 @define-color yellow	#d79921;
@@ -60,11 +60,11 @@
 
 /* The whole bar */
 #waybar {
-	background: rgba(40, 40, 40, 0.8784313725); /* #282828e0 */
+	background: @black; /* rgba(40, 40, 40, 0.8784313725); #282828e0 */
 	color: @white;
 	/*font-family: JetBrains Mono, Siji;*/
 	font-family: EnvyCodeR Nerd Font;
-	font-size: 12pt;
+	font-size: 15pt;
 	/*font-weight: bold;*/
 }
 

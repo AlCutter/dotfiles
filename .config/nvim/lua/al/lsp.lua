@@ -12,8 +12,8 @@ return {
 	{ -- LSP Configuration & Plugins
 		"neovim/nvim-lspconfig",
 		dependencies = {
-			"williamboman/mason.nvim",
-			"williamboman/mason-lspconfig.nvim",
+			"mason-org/mason.nvim",
+			"mason-org/mason-lspconfig.nvim",
 			{ "j-hui/fidget.nvim", opts = {} },
 		},
 		config = function()
@@ -98,6 +98,9 @@ return {
 							},
 						},
 					},
+				},
+				rocq_lsp = {
+				  settings = {},
 				},
 			}
 

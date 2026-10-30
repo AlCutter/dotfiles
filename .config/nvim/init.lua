@@ -196,6 +196,27 @@ require("lazy").setup({
 		},
 		ft = { "markdown" },
 	},
+    
+	-- Coq support
+	{
+		"ms-jpq/coq_nvim",
+		branch = "coq",
+	},
+	{
+		"ms-jpq/coq.artifacts",
+		branch = "artifacts",
+	},
+	{
+		"wallabyg/rocq.nvim",
+		main = "rocq",
+		ft = "coq",
+		init = function()
+		  -- Treat .v files as Rocq in a Rocq-focused configuration.
+		  vim.filetype.add({ extension = { v = "coq" } })
+		end,
+		opts = {},
+	},
+
 
 	-- Import all custom modular plugin configurations from lua/al/
 	{ import = "al" },
